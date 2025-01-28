@@ -25,5 +25,5 @@ jobs:
        - name: Upload artifact
          uses: actions/upload-artifact@v4
          with:
-           name: Image
-           path: out/arch/arm64/boot/
+           name: out
+           path: out
