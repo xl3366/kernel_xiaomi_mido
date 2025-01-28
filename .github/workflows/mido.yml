@@ -22,3 +22,8 @@ jobs:
          run: |
              curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
              chmod +x build.sh && bash build.sh
+       - name: Upload artifact
+         uses: actions/upload-artifact@v4
+         with:
+           name: Image.gz-dtb
+           path: out/arch/arm64/boot/Image.gz-dtb
