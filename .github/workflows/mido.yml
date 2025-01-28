@@ -16,7 +16,7 @@ jobs:
               sudo -E apt-get -qq install git make bc bison -y ccache \
               openssl zip kmod cpio flex libelf-dev curl \
               libssl-dev libtfm-dev wget device-tree-compiler \
-              ca-certificates python3 python2 binutils \
+              ca-certificates python3  binutils \
               binutils-aarch64-linux-gnu binutils-arm-linux-gnueabi
        - name: Building Kernel...
          run: |
